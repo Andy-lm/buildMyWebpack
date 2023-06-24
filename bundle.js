@@ -71,9 +71,7 @@ const bundle = (file) => {
     })(${depsGraph})`;
 };
 
-const content = bundle('./src/index.js')
+const content = bundle("./src/index.js");
 
-fs.mkdirSync('./dist');
-fs.writeFileSync('./dist/bundle.js',content)
-
-
+fs.mkdirSync("./dist");
+fs.writeFileSync("./dist/bundle.js", content);
